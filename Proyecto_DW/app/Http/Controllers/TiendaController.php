@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\Auth;
+use App\tienda;
 
 class TiendaController extends Controller
 {
@@ -11,9 +15,14 @@ class TiendaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
-        //
+        return view("tiendas.index");
     }
 
     /**
@@ -23,7 +32,7 @@ class TiendaController extends Controller
      */
     public function create()
     {
-        //
+        return view("tiendas.create");
     }
 
     /**
@@ -54,9 +63,9 @@ class TiendaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit()
     {
-        //
+        return view("tiendas.edit");
     }
 
     /**

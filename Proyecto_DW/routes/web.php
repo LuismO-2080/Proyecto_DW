@@ -18,3 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get( '/tienda' , 'TiendaController@index');
+Route::get( '/tienda/new' , 'TiendaController@create');
+Route::post( '/tienda/save/' , 'TiendaController@store');
+Route::get( '/tienda/edit' , 'TiendaController@edit');
+Route::patch( '/tienda/{tienda}/update' , 'TiendaController@update');
+Route::delete( '/tienda/remove/{tienda}' , 'TiendaController@destroy');
