@@ -10,6 +10,10 @@ class tienda extends Model
 
     protected $fillable=[
     	'id',
-    	'nombre'
+    	'nombre',
+    	'nit',
+    	'encargado_id',
+    	'ubicacion',
+    	'capacidad',
     ];
 }

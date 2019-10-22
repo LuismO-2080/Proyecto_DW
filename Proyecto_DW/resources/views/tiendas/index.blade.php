@@ -1,9 +1,9 @@
 <div>
     <div>
-        <h2>Bienvenidos a la Administración de Tiendas</h2>
+        <h2> ADMINISTRACION DE TIENDAS </h2>
     </div>
     <div>
-        <p> Ésta es mi primer pantalla</p>
+        <p>  descripción de Tiendas </p>
     </div>
 
     <div>

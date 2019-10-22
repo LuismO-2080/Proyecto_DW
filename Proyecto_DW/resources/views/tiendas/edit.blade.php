@@ -1,8 +1,8 @@
 <div>
     <div>
-        <h2>Bienvenidos a la Administración de Tiendas</h2>
+        <h2> ADMINISTRACION DE TIENDAS </h2>
         <br>
-        <h4>Edición de Tiendas</h4>
+        <h4> Edición de Tiendas </h4>
     </div>
     <div>
         <label>Nombre Tienda</label>
