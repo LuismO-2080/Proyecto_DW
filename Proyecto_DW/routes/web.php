@@ -31,12 +31,26 @@ Route::get( '/empleado' , 'EmpleadoController@index');
 Route::get( '/empleado/new' , 'EmpleadoController@create');
 Route::post( '/empleado/save/' , 'EmpleadoController@store');
 Route::get( '/empleado/edit' , 'EmpleadoController@edit');
-Route::patch( '/empleado/{tienda}/update' , 'EmpleadoController@update');
-Route::delete( '/empleado/remove/{tienda}' , 'EmpleadoController@destroy');
+Route::patch( '/empleado/{empleado}/update' , 'EmpleadoController@update');
+Route::delete( '/empleado/remove/{empleado}' , 'EmpleadoController@destroy');
 
 Route::get( '/proveedor' , 'ProveedorController@index');
 Route::get( '/proveedor/new' , 'ProveedorController@create');
 Route::post( '/proveedor/save/' , 'ProveedorController@store');
 Route::get( '/proveedor/edit' , 'ProveedorController@edit');
-Route::patch( '/proveedor/{tienda}/update' , 'ProveedorController@update');
-Route::delete( '/proveedor/remove/{tienda}' , 'ProveedorController@destroy');
+Route::patch( '/proveedor/{proveedor}/update' , 'ProveedorController@update');
+Route::delete( '/proveedor/remove/{proveedor}' , 'ProveedorController@destroy');
+
+Route::get( '/producto' , 'ProductoController@index');
+Route::get( '/producto/new' , 'ProductoController@create');
+Route::post( '/producto/save/' , 'ProductoController@store');
+Route::get( '/producto/edit' , 'ProductoController@edit');
+Route::patch( '/producto/{producto}/update' , 'ProductoController@update');
+Route::delete( '/producto/remove/{producto}' , 'ProductoController@destroy');
+
+Route::get( '/serie' , 'SerieController@index');
+Route::get( '/serie/new' , 'SerieController@create');
+Route::post( '/serie/save/' , 'SerieController@store');
+Route::get( '/serie/edit' , 'SerieController@edit');
+Route::patch( '/serie/{serie}/update' , 'SerieController@update');
+Route::delete( '/serie/remove/{serie}' , 'SerieController@destroy');
