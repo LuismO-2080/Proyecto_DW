@@ -36,4 +36,35 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function role(){
+
+        return $this->belongsTo('App\Role');
+    }
+
+    public function esAdmin(){
+
+        if($this->role->nombre_rol=='administrador'){
+            return true;
+        }
+        if($this->role->nombre_rol=='ventas'){
+            return true;
+        }
+        return false;
+    }
+
+        public function esUser(){
+
+        if($this->role->nombre_rol=='administrador'){
+            return true;
+        }
+        if($this->role->nombre_rol=='bodega'){
+            return true;
+        }
+        return false;
+    }
+
+
 }
+
+
